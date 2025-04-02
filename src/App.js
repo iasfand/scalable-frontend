@@ -5,6 +5,7 @@ import ReactCrop from 'react-image-crop';
 import 'react-image-crop/dist/ReactCrop.css';
 
 const API_BASE = 'http://54.227.181.110:5000';
+// const API_BASE = 'http://localhost:5000';
 
 const fadeIn = keyframes`
   0% { opacity: 0; transform: scale(0.95); }
@@ -133,7 +134,7 @@ const App = () => {
     formData.append("file", file);
 
     try {
-      const response = await axios.post(`http://3.254.170.207:5000/compress`, formData, {
+      const response = await axios.post(`http://34.249.233.139:5000/compress`, formData, {
         responseType: "blob",
         headers: { "Content-Type": "multipart/form-data" },
       });
