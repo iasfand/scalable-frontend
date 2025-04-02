@@ -125,6 +125,8 @@ const App = () => {
     }
   };
 
+
+
   const handleCompress = async () => {
     if (!file) return;
     setLoading(true);
